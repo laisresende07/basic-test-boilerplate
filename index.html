@@ -1,17 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <title>Front End Test - Greenthumb</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./index.scss" />
-  </head>
+</head>
 
-  <body>
-    <img src="images/icons/logo-white.svg" alt="Greenthumb" />
-  </body>
+<body>
+    <header class="header">
+        <div class="intro">
+            <img src="images/icons/logo-white.svg" alt="Greenthumb" />
+            <h1>
+                Find your <br /> next green <br /> friend
+            </h1>
+            <img src="images/icons/arrow-down.svg" class="arrow-down" />
+        </div>
+        <img src="images/hero/desktop/plantperson.png" class="plantperson" />
+        <img src="images/hero/mobile/mobile-plantperson.png" class="mobile-plantperson" />
+    </header>
+
+    <section id="filters-section" class="content">
+        <div class="card">
+            <img src="images/illustrations/sun.png" width="75px" />
+            <p><strong>1.</strong> Set the amount of <strong>sunlight</strong> your plant will get.</p>
+            <select name="sun" id="select-sunlight">
+                <option disabled selected value="">Select...</option>
+                <option value="no">No sun</option>
+                <option value="low">Low sun</option>
+                <option value="high">High sun</option>
+            </select>
+        </div>
+        <div class="card">
+            <img src="images/illustrations/wateringcan.png" height="75px" class="flip" />
+            <p><strong>2.</strong> How often do you want to <strong>water</strong> your plant?</p>
+            <select name="water" id="select-wateringcan">
+                <option disabled selected value="">Select...</option>
+                <option value="regularly">Regularly</option>
+                <option value="daily">Daily</option>
+                <option value="rarely">Rarely</option>
+            </select>
+        </div>
+        <div class="card">
+            <img src="images/illustrations/dog.png" width="75px" />
+            <p><strong>3.</strong> Do you have pets? Do they <strong>chew</strong> plants?</p>
+            <select name="pets" id="select-dog">
+                <option disabled selected value="">Select...</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="no-results" class="no-results">
+        <div>
+            <h1>No results yet...</h1>
+            <p>Use the filters above to find<br />the plant that best fits your<br />environment :)</p>
+        </div>
+        <img src="images/illustrations/no-results.png" />
+    </section>
+
+    <section class="section-results hide" id="section-results">
+        <div class="container">
+            <img class="results-image" src="images/illustrations/pick.png" alt="" width="150" />
+            <h2>
+                Our picks for you
+            </h2>
+            <div class="cards-container" id="results-container">
+            </div>
+            <div class="button-top">
+                <button name="scroll-to-top">
+                    <img src="images/icons/arrow-up.svg" alt="arrow up">
+                    back to the top
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
 </html>
