@@ -4,7 +4,7 @@
 
 <br>
 
-Aplicação vanilla (HTML, JS, CSS) responsiva para auxiliar o usuário a escolher a planta ideal para ter em casa. 
+Aplicação vanilla responsiva para auxiliar o usuário a escolher a planta ideal para ter em casa. 
 
 <br>
 
