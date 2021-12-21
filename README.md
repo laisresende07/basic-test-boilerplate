@@ -22,4 +22,4 @@ Aplicação vanilla (HTML, JS, CSS) responsiva para auxiliar o usuário a escolh
 
 <br>
 
-#### [Clique aqui para visualizar o protótipo da aplicação desenvolvido no FIgma](https://www.figma.com/file/Socuz9DYBg9WklbQIWITWq/greenthumb-pocket-v2)
+#### [Clique aqui para visualizar o protótipo da aplicação desenvolvido no Figma](https://www.figma.com/file/Socuz9DYBg9WklbQIWITWq/greenthumb-pocket-v2)
